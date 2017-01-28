@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hibana Projet</title>
+    <!--Etiquetas CSS-->
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <!--Barra de navegacion -->
+  <nav class=" green darken-3">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo center">
+        <img class="responsive-image img-nav" src="img/cima.png">
+      </a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="login.html">Iniciar Sesion/Registro</a></li>
+        <li><a href="badges.html">Calificar</a></li>
+        <li><a href="collapsible.html">Acerca de</a></li>
+        <li><a href="mobile.html">Contactanos</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="login.html">Iniciar Sesion/Registro</a></li>
+        <li><a href="badges.html">Calificar</a></li>
+        <li><a href="collapsible.html">Acerca de</a></li>
+        <li><a href="mobile.html">Contactanos</a></li>
+      </ul>
+    </div>
+  </nav>
+  <br>
+  <!--Contenedor principal -->
+  <div class="container white z-depth-2">
+  <ul class="tabs teal">
+    <li class="tab col s3"><a class="white-text active" href="#login">Iniciar Sesion</a></li>
+    <li class="tab col s3"><a class="white-text" href="#register">Registrarse</a></li>
+  </ul>
+  <div id="login" class="col s12">
+    <form class="col s12">
+      <div class="form-container">
+        <h3 class="teal-text">Bienvenido</h3>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate">
+            <label for="email">Correo Electronico</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="password" type="password" class="validate">
+            <label for="password">Contraseña</label>
+          </div>
+        </div>
+        <br>
+        <center>
+          <button class="btn waves-effect waves-light teal" type="submit" name="action">Iniciar Sesion</button>
+          <br>
+          <br>
+          <a href="">Olvido su contraseña?</a>
+        </center>
+      </div>
+    </form>
+  </div>
+  <div id="register" class="col s12">
+    <form class="col s12">
+      <div class="form-container">
+        <h3 class="teal-text">Ingrese sus datos</h3>
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Nombre</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Apellidos</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate">
+            <label for="email">Correo Electronico</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="password" type="password" class="validate">
+            <label for="password">Contraseña</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="password-confirm" type="password" class="validate">
+            <label for="password-confirm">Confirmar Contraseña</label>
+          </div>
+        </div>
+        <center>
+          <button class="btn waves-effect waves-light teal" type="submit" name="action">Registrarse</button>
+        </center>
+      </div>
+    </form>
+  </div>
+</div>
+<br>
+
+  <!--Etiquetas JS-->
+  <script src="js/jquery-3.1.1.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".button-collapse").sideNav();
+    });
+  </script>
+</body>
+</html>
