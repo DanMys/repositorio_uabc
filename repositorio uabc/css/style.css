@@ -5,15 +5,25 @@
 body{
 	background-color: #eceff1;
 }
+div.background-head{
+	background: url(../img/banner.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-top: -15px;
+	height: 500px;
+}
+div.phrase{
+	padding: 80px;
+}
 img.img-footer{
 	width: 140px;
 	height: 100px;
 }
 img.img-nav{
-	width: 20%;
+	width: 60px;
 	height: 60px;
-	float: left;
-	padding-left: 10px;
 }
 .tabs .indicator
 {
@@ -32,5 +42,47 @@ img.img-nav{
 {
 	position: absolute;
 }
-.carousel .carousel-item {
-height:1800px !important;}
+.contact .col
+{
+    margin-bottom: 24px;
+}
+
+.contact h5
+{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.contact h6
+{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+
+.contact hr
+{
+    width: 40px;
+    margin-bottom: 45px;
+}
+
+.contact .contact-holder
+{
+    padding-left: 40px;
+    text-align: left;
+}
+
+.contact .contact-holder h6
+{
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.contact .contact-holder p
+{
+    margin-bottom: 30px;
+}
+nav .nav-wrapper form, nav .nav-wrapper form .input-field{
+height: 100%;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hibana Projet</title>
+    <!--Etiquetas CSS-->
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <!--Barra de navegacion -->
+  <nav class=" green darken-3">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo center">
+        <img class="responsive-image img-nav" src="img/cima.png">
+      </a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+          <li class="active"><a href="home.html">Inicio</a></li>
+          <li><a href="politics.html">Politicas</a></li>
+          <li><a href="stats.html">Estadisticas</a></li>
+          <li><a href="recent.html">Más Recientes</a></li>
+          <!-- <li><a href="faq.html">FAQ's</a></li> -->
+          <li><a href="advanced.html">Búsqueda avanzada</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+            <li><a href="home.html">Inicio</a></li>
+            <li><a href="politics.html">Politicas</a></li>
+            <li><a href="stats.html">Estadisticas</a></li>
+            <li><a href="recent.html">Más Recientes</a></li>
+            <!-- <li><a href="faq.html">FAQ's</a></li> -->
+            <li><a href="advanced.html">Búsqueda avanzada</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <br>
+    <center><h5>Registro</h4></center>
+    <div class="divider"></div>
+      <div class="section">
+        <h5>Datos Personales</h5>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="first_name" type="text" class="validate">
+                  <label for="first_name">Nombre</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="last_name" type="text" class="validate">
+                  <label for="last_name">Apellidos</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        
+      <div class="divider"></div>
+      <div class="section">
+        <h5>Section 2</h5>
+        <p>Stuff</p>
+      </div>
+      <div class="divider"></div>
+      <div class="section">
+        <h5>Section 3</h5>
+        <p>Stuff</p>
+      </div>
+
+  </div>
+
+
+  <!--Footer -->
+  <footer class="page-footer grey darken-4">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Desarrollado por:</h5>
+                <img class="responsive-image img-footer" src="img/Qbit jpg.jpeg">
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Enlaces</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Universidad Autonoma de Baja California</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Acerca de</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Contactanos</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Terminos & Condiciones</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+                © 2016 Copyright Hibana Projet
+            </div>
+          </div>
+        </footer>
+
+  <!--Etiquetas JS-->
+  <script src="js/jquery-3.1.1.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".button-collapse").sideNav();
+    });
+  </script>
+</body>
+</html>
