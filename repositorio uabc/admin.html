@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hibana Projet</title>
+    <!--Etiquetas CSS-->
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <header>
+        <!-- <nav class="top-nav">
+          <div class="container">
+            <div class="nav-wrapper"><a class="page-title">SideNav</a></div>
+          </div>
+        </nav> -->
+        <div class="container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a></div>
+        <ul id="nav-mobile" class="side-nav fixed">
+          <li>
+            
+            <input type="text" name="search" placeholder="Search..">
+          </li>
+          <li><a href="login.html" class="collapsible-header waves-effect waves-teal"><i class="material-icons left">assignment</i>Profesores</a></li>
+          <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+              <li><a class="collapsible-header waves-effect waves-teal"><i class="material-icons ">assignment</i>Trabajos</a>
+                <div class="collapsible-body">
+                  <ul>
+                    <li class="active"><a id="btnContinue" href="#test1">Libros</a></li>
+                    <li><a id="btnContinue2" href="#test2">Capitulos de Libro</a></li>
+                    <li><a href="helpers.html">Direccion de Tesis</a></li>
+                    <li><a href="media-css.html">Investigaciones</a></li>
+                    <li><a href="sass.html">Articulos Arbitrados</a></li>
+                    <li><a href="shadow.html">Articulos Indexados</a></li>
+                    <li><a href="table.html">Ponencias</a></li>
+                    <li><a href="shadow.html">Materiales Didacticos</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="bold"><a class="collapsible-header  waves-effect waves-teal">Components</a>
+                <div class="collapsible-body">
+                  <ul>
+                    <li><a href="badges.html">Badges</a></li>
+                    <li><a href="buttons.html">Buttons</a></li>
+                    <li><a href="breadcrumbs.html">Breadcrumbs</a></li>
+                    <li><a href="cards.html">Cards</a></li>
+                    <li><a href="chips.html">Chips</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="footer.html">Footer</a></li>
+                    <li><a href="forms.html">Forms</a></li>
+                    <li><a href="icons.html">Icons</a></li>
+                    <li><a href="navbar.html">Navbar</a></li>
+                    <li><a href="pagination.html">Pagination</a></li>
+                    <li><a href="preloader.html">Preloader</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="bold"><a href="http://materializecss.com/mobile.html" class="waves-effect waves-teal">Mobile</a></li>
+          <li class="bold"><a href="showcase.html" class="waves-effect waves-teal">Showcase</a></li>
+          <li class="bold"><a href="themes.html" class="waves-effect waves-teal">Themes</a></li>
+        </ul>
+      </header>
+
+      <div class="row">
+        <div class="col m10 offset-m2">
+          <ul class="tabs">
+            <li class="tab col s3"><a href="#test1">Test 1</a></li>
+            <li class="tab col s3"><a href="#test2">Test 2</a></li>
+            <li class="tab col s3"><a href="#test3">Test 3</a></li>
+            <li class="tab col s3"><a href="#test4">Test 4</a></li>
+            <li class="tab col s3"><a href="#test5">Test 5</a></li>
+            <li class="tab col s3"><a href="#test6">Test 6</a></li>
+          </ul>
+        </div>
+        <div class="container">
+
+          <div id="test1" class="col m10 offset-m2">
+            <table class="borded">
+              <thead>
+                <tr>
+                    <th data-field="id">ID</th>
+                    <th data-field="name">Autor</th>
+                    <th data-field="price">Titulo</th>
+                    <th data-field="price">Tipo</th>
+                    <th data-field="price">Opciones</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Alvin</td>
+                  <td>Eclair</td>
+                  <td>Tesis</td>
+                  <td>
+                    <a class="btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Leer"><i class="material-icons">assignment</i></a>
+                    <a class="btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Actualizar"><i class="material-icons">mode_edit</i></a>
+                    <a class="btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Borrar"><i class="material-icons">delete</i></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Alan</td>
+                  <td>Jellybean</td>
+                  <td>$3.76</td>
+                </tr>
+                <tr>
+                  <td>Jonathan</td>
+                  <td>Lollipop</td>
+                  <td>$7.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div id="test2" class="col m10 offset-m2">
+          hola
+        </div>
+
+        </div>
+
+
+  <!--Footer -->
+
+
+  <!--Etiquetas JS-->
+  <script src="js/jquery-3.1.1.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".button-collapse").sideNav();
+      $('ul.tabs').tabs();
+      $('ul.tabs').tabs('select_tab', 'tab_id');
+
+
+
+    });
+  </script>
+</body>
+</html>

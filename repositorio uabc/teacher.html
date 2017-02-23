@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hibana Projet</title>
+    <!--Etiquetas CSS-->
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <!--Barra de navegacion -->
+  <nav class=" green darken-3">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo center">
+        <img class="responsive-image img-nav" src="img/cima.png">
+      </a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="estatuto.pdf">Politicas</a></li>
+          <li><a href="stats.html">Estadisticas</a></li>
+          <li><a href="recent.html">Más Recientes</a></li>
+          <!-- <li><a href="faq.html">FAQ's</a></li> -->
+          <li><a href="advanced.html">Búsqueda avanzada</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+            <li><a href="home.html">Inicio</a></li>
+            <li><a href="politics.html">Politicas</a></li>
+            <li><a href="stats.html">Estadisticas</a></li>
+            <li><a href="recent.html">Más Recientes</a></li>
+            <!-- <li><a href="faq.html">FAQ's</a></li> -->
+            <li><a href="advanced.html">Búsqueda avanzada</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="col m2 offset-m4">
+      <br>
+      <h5 class="center-align">REGISTRO</h5>
+    </div>
+    <div id="form_1">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s12 m2 offset-m3">
+            <input id="no_emp" type="number" name="no_emp" class="validate">
+            <label for="no_emp">No. Empleado</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12 m3 offset-m3">
+            <!-- <i class="material-icons prefix">account_circle</i> -->
+            <input id="first_name" type="text" class="validate">
+            <label for="first_name">Nombre</label>
+          </div>
+          <div class="input-field col s12 m3">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Apellidos</label>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div id="form_2">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s12 m3 offset-m3">
+            <input id="email" type="email" class="validate">
+            <label for="email">Correo Electronico</label>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div id="form_3">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s12 m2 offset-m3">
+            <select>
+              <option value="" disable selected>Eliga una opcion</option>
+              <option value="1">Licenciatura</option>
+              <option value="2">Maestria</option>
+              <option value="3">Doctorado</option>
+              <option value="4">Post Doctorado</option>
+            </select>
+            <label>Grado Maximo de Estudios</label>
+          </div>
+          <div class="input-field col s12 m2">
+            <select>
+              <option value="" disable selected>Eliga una opcion</option>
+              <option value="1">Informatica</option>
+              <option value="2">Administracion</option>
+              <option value="3">Contaduria</option>
+              <option value="4">Negocios</option>
+            </select>
+            <label>Cuerpo Academico</label>
+          </div>
+
+          <div class="input-field col s12 m2">
+            <select>
+              <option value="" disable selected>Eliga una opcion</option>
+              <option value="1">Informatica</option>
+              <option value="2">Administracion</option>
+              <option value="3">Contaduria</option>
+              <option value="4">Negocios</option>
+            </select>
+            <label>LGAC</label>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div id="form_4">
+      <div class="row">
+        <form  class="col s12 m2 offset-m3" action="#">
+            <h6>PRODEP</h6>
+          <p>
+            <input name="group1" type="radio" id="test1" />
+            <label for="test1">Red</label>
+          </p>
+          <p>
+            <input name="group1" type="radio" id="test2" />
+            <label for="test2">Yellow</label>
+          </p>
+        </form>
+
+        <form  class="col s12 m2" action="#">
+            <h6>SNI</h6>
+          <p>
+            <input name="group2" type="radio" id="test3" />
+            <label for="test3">Red</label>
+          </p>
+          <p>
+            <input name="group2" type="radio" id="test4" />
+            <label for="test4">Yellow</label>
+          </p>
+        </form>
+
+        <div class="input-field col s12 m2">
+          <select>
+            <option value="" disable selected>Eliga una opcion</option>
+            <option value="1">Licenciatura </option>
+            <option value="2">Maestria</option>
+            <option value="3">Doctorado</option>
+            <option value="4">Post Doctorado</option>
+          </select>
+          <label>Grado Maximo de Estudios</label>
+        </div>
+      </div>
+
+      <div class="row">
+
+      </div>
+    </div>
+
+    <div id="form5">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s12 m3 offset-m3">
+            <!-- <i class="material-icons prefix">account_circle</i> -->
+            <input id="pass" type="password" class="validate">
+            <label for="pass">Contraseña</label>
+          </div>
+          <div class="input-field col s12 m3">
+            <input id="pass_confirm" type="password" class="validate">
+            <label for="pass_confirm">Confirme Contraseña</label>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="row">
+      <div class="col s12 m3 offset-m5">
+        <a class="waves-effect waves-light btn"><i class="material-icons left">done</i>REGISTRAR</a>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+  <!--Footer -->
+  <footer class="page-footer grey darken-4">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Desarrollado por:</h5>
+                <img class="responsive-image img-footer" src="img/Qbit jpg.jpeg">
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Enlaces</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Universidad Autonoma de Baja California</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Acerca de</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Contactanos</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Terminos & Condiciones</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+                © 2016 Copyright Hibana Projet
+            </div>
+          </div>
+        </footer>
+
+  <!--Etiquetas JS-->
+  <script src="js/jquery-3.1.1.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $('ul.tabs').tabs();
+    $('select').material_select();
+
+  });
+
+  </script>
+</body>
+</html>

@@ -9,102 +9,137 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-  <!--Barra de navegacion -->
-  <nav class=" green darken-3">
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo center">
-        <img class="responsive-image img-nav" src="img/cima.png">
-      </a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-          <li class="active"><a href="home.html">Inicio</a></li>
-          <li><a href="politics.html">Politicas</a></li>
-          <li><a href="stats.html">Estadisticas</a></li>
-          <li><a href="recent.html">Más Recientes</a></li>
-          <!-- <li><a href="faq.html">FAQ's</a></li> -->
-          <li><a href="advanced.html">Búsqueda avanzada</a></li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-            <li><a href="home.html">Inicio</a></li>
-            <li><a href="politics.html">Politicas</a></li>
-            <li><a href="stats.html">Estadisticas</a></li>
-            <li><a href="recent.html">Más Recientes</a></li>
-            <!-- <li><a href="faq.html">FAQ's</a></li> -->
-            <li><a href="advanced.html">Búsqueda avanzada</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="container">
-    <br>
-    <center><h5>Registro</h4></center>
-    <div class="divider"></div>
-      <div class="section">
-        <h5>Datos Personales</h5>
-          <div class="row">
-            <form class="col s12">
-              <div class="row">
-                <div class="input-field col s6">
-                  <i class="material-icons prefix">account_circle</i>
-                  <input id="first_name" type="text" class="validate">
-                  <label for="first_name">Nombre</label>
-                </div>
-                <div class="input-field col s6">
-                  <input id="last_name" type="text" class="validate">
-                  <label for="last_name">Apellidos</label>
-                </div>
-              </div>
-            </form>
+  <header>
+        <!-- <nav class="top-nav">
+          <div class="container">
+            <div class="nav-wrapper"><a class="page-title">SideNav</a></div>
           </div>
+        </nav> -->
+        <div class="container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a></div>
+        <ul id="nav-mobile" class="side-nav fixed">
+
+          <li><a href="about.html" class="waves-effect waves-teal">About</a></li>
+          <li><a href="getting-started.html" class="waves-effect waves-teal">Getting Started</a></li>
+          <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+              <li><a class="collapsible-header  waves-effect waves-teal"><i class="material-icons">assignment</i>CSS</a>
+                <div class="collapsible-body">
+                  <ul>
+                    <li><a id="btnContinue" href="#test1">Maestros</a></li>
+                    <li><a id="btnContinue2" href="#test2">Libros</a></li>
+                    <li><a href="helpers.html">Helpers</a></li>
+                    <li><a href="media-css.html">Media</a></li>
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="shadow.html">Shadow</a></li>
+                    <li><a href="table.html">Table</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="bold"><a class="collapsible-header  waves-effect waves-teal">Components</a>
+                <div class="collapsible-body">
+                  <ul>
+                    <li><a href="badges.html">Badges</a></li>
+                    <li><a href="buttons.html">Buttons</a></li>
+                    <li><a href="breadcrumbs.html">Breadcrumbs</a></li>
+                    <li><a href="cards.html">Cards</a></li>
+                    <li><a href="chips.html">Chips</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="footer.html">Footer</a></li>
+                    <li><a href="forms.html">Forms</a></li>
+                    <li><a href="icons.html">Icons</a></li>
+                    <li><a href="navbar.html">Navbar</a></li>
+                    <li><a href="pagination.html">Pagination</a></li>
+                    <li><a href="preloader.html">Preloader</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="bold"><a href="http://materializecss.com/mobile.html" class="waves-effect waves-teal">Mobile</a></li>
+          <li class="bold"><a href="showcase.html" class="waves-effect waves-teal">Showcase</a></li>
+          <li class="bold"><a href="themes.html" class="waves-effect waves-teal">Themes</a></li>
+        </ul>
+      </header>
+
+      <div class="row">
+        <div class="col m10 offset-m2">
+          <ul class="tabs">
+            <li class="tab col s3"><a href="#test1">Test 1</a></li>
+            <li class="tab col s3"><a href="#test2">Test 2</a></li>
+            <li class="tab col s3"><a href="#test1">Test 1</a></li>
+            <li class="tab col s3"><a href="#test2">Test 2</a></li>
+            <li class="tab col s3"><a href="#test1">Test 1</a></li>
+            <li class="tab col s3"><a href="#test2">Test 2</a></li>
+            <li class="tab col s3"><a href="#test1">Test 1</a></li>
+            <li class="tab col s3"><a href="#test2">Test 2</a></li>
+            <li class="tab col s3"><a href="#test1">Test 1</a></li>
+            <li class="tab col s3"><a href="#test2">Test 2</a></li>
+            <!-- <li class="tab col s3"><a href="#test3">Disabled Tab</a></li>
+            <li class="tab col s3"><a href="#test4">Test 4</a></li> -->
+          </ul>
+        </div>
+        <div class="container">
+
+          <div id="test1" class="col m10 offset-m2">
+            <table class="borded">
+              <thead>
+                <tr>
+                    <th data-field="id">ID</th>
+                    <th data-field="name">Autor</th>
+                    <th data-field="price">Titulo</th>
+                    <th data-field="price">Tipo</th>
+                    <th data-field="price">Opciones</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Alvin</td>
+                  <td>Eclair</td>
+                  <td>Tesis</td>
+                  <td>
+                    <a class="btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Leer"><i class="material-icons">assignment</i></a>
+                    <a class="btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Actualizar"><i class="material-icons">mode_edit</i></a>
+                    <a class="btn tooltipped" data-position="bottom" data-delay="50" data-tooltip="Borrar"><i class="material-icons">delete</i></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Alan</td>
+                  <td>Jellybean</td>
+                  <td>$3.76</td>
+                </tr>
+                <tr>
+                  <td>Jonathan</td>
+                  <td>Lollipop</td>
+                  <td>$7.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="test2" class="col s12">Test 2</div>
+          <div id="test3" class="col s12">Test 3</div>
+          <div id="test4" class="col s12">Test 4</div>
         </div>
 
-        
-      <div class="divider"></div>
-      <div class="section">
-        <h5>Section 2</h5>
-        <p>Stuff</p>
-      </div>
-      <div class="divider"></div>
-      <div class="section">
-        <h5>Section 3</h5>
-        <p>Stuff</p>
-      </div>
-
-  </div>
+        </div>
 
 
   <!--Footer -->
-  <footer class="page-footer grey darken-4">
-          <div class="container">
-            <div class="row">
-              <div class="col l6 s12">
-                <h5 class="white-text">Desarrollado por:</h5>
-                <img class="responsive-image img-footer" src="img/Qbit jpg.jpeg">
-              </div>
-              <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Enlaces</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Universidad Autonoma de Baja California</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Acerca de</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Contactanos</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Terminos & Condiciones</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-                © 2016 Copyright Hibana Projet
-            </div>
-          </div>
-        </footer>
+
 
   <!--Etiquetas JS-->
   <script src="js/jquery-3.1.1.js"></script>
+  <script src="js/init.js"></script>
   <script src="js/materialize.min.js"></script>
   <script>
     $(document).ready(function(){
       $(".button-collapse").sideNav();
+      $('ul.tabs').tabs();
+      $('ul.tabs').tabs('select_tab', 'tab_id');
+
+
+
     });
   </script>
 </body>
