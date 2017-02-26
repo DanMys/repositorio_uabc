@@ -13,11 +13,32 @@ $(document).ready(function() {
   // });
 
   $('ul.tabs').tabs();
-  $("#btnContinue").click(function() {
-    $('ul.tabs').tabs('select_tab', 'test1');
+  $("#libro").click(function() {
+   $('ul.tabs').tabs('select_tab', 'test1');
+ });
+ $("#cap_libro").click(function() {
+   $('ul.tabs').tabs('select_tab', 'test2');
+ });
+  $("#dir_tesis").click(function() {
+    $('ul.tabs').tabs('select_tab', 'test3');
   });
-  $("#btnContinue2").click(function() {
-    $('ul.tabs').tabs('select_tab', 'test2');
+  $("#invest").click(function() {
+    $('ul.tabs').tabs('select_tab', 'test4');
+  });
+  $("#art_arbi").click(function() {
+    $('ul.tabs').tabs('select_tab', 'test5');
+  });
+  $("#art_index").click(function() {
+    $('ul.tabs').tabs('select_tab', 'test6');
+  });
+  $("#ponencia").click(function() {
+    $('ul.tabs').tabs('select_tab', 'test7');
+  });
+  $("#mat_didac").click(function() {
+    $('ul.tabs').tabs('select_tab', 'test8');
+  });
+  $("#profesor").click(function() {
+    $('ul.tabs').tabs('select_tab', 'test9');
   });
 
 });
